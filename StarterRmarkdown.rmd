@@ -1,7 +1,7 @@
 ---
 title: "Case: Starter R Markdown Document"
 author: "<your name>"
-date: "5/3/2022"
+date: "4/10/2024"
 output: html_document
 ---
 
@@ -14,10 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
 
 ## Including Plots
 
@@ -40,7 +36,7 @@ library(ggplot2)
 
 ```{r}
 # load data
-accts <- read.csv("C:/Users/<username>/Desktop/Case_AccountData.csv") #replace this with your path
+accts <- read.csv("C:/Users/<username>/Desktop/NewEmployees.csv") #replace this with your path
 head(accts)
 
 ```
@@ -48,12 +44,12 @@ head(accts)
 ## Load and Explore Acquisition Dates
 
 ```{r}
-acq <- read.csv("C:/Users/<username>/Desktop/Case_AccountCreation.csv")
+acq <- read.csv("C:/Users/<username>/Desktop/AADId_VSId_Map.csv")
 head(acq)
 ```
 
 ## Load and Explore Usage Data
 ```{r}
-usage <- read.csv("C:/Users/<username>/Desktop/Case_UsageData.csv")
+usage <- read.csv("C:/Users/<username>/Desktop/PullRequests.csv")
 head(usage)
 ```
